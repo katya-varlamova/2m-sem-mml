@@ -24,19 +24,28 @@ def fit_polynomial_regression(X, y, degree):
 def calculate_error(model, poly_features, X, y):
     X_poly = poly_features.transform(X)
     y_pred = model.predict(X_poly)
-    return mean_squared_error(y, y_pred)
+    return mean_squared_error(y, y_pred), y_pred
 
 
-degrees = np.arange(1, 15)
+degrees = np.arange(1, 21)
 train_errors = []
 control_errors = []
 
 for degree in degrees:
     model, poly_features = fit_polynomial_regression(X_train, y_train, degree)
-    train_error = calculate_error(model, poly_features, X_train, y_train)
-    control_error = calculate_error(model, poly_features, X_control, y_control)
+    train_error, y_p_t = calculate_error(model, poly_features, X_train, y_train)
+    control_error, y_p_c = calculate_error(model, poly_features, X_control, y_control)
     train_errors.append(train_error)
     control_errors.append(control_error)
+    if degree == 16 or degree == 20 or degree == 13 or degree == 10 or degree == 5:
+        plt.plot(X_train, y_train, label = "train")
+        plt.plot(X_control, y_control, label = "control")
+        plt.plot(X_train, y_p_t, label = "predicted train")
+        plt.plot(X_control, y_p_c, label = "predicted control")
+        plt.legend()
+        plt.title('полином')
+        plt.savefig(str(degree) + ".png")
+        plt.clf()
 
 plt.plot(degrees, train_errors, label='Обучающая выборка')
 plt.plot(degrees, control_errors, label='Контрольная выборка')

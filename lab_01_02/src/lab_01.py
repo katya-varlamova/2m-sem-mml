@@ -13,10 +13,10 @@ theta_3 = 0.5
 np.random.seed(0)
 X_train = np.linspace(0, 10, 100)  # значения x от 0 до 10
 y_train = theta_1 * X_train + theta_2 * np.sin(X_train) + theta_3 + np.random.normal(0, 0.5, 100)  # значения y(x)с шумом
-
+print()
 min_mse = float('inf')
 best_degree = 0
-degrees = list(range(1, 50))
+degrees = list(range(1, 21))
 errors = []
 for degree in degrees:  # Перебираем степени полиномов от 1 до 100
     poly_features = PolynomialFeatures(degree=degree)
@@ -33,6 +33,15 @@ for degree in degrees:  # Перебираем степени полиномов
     if mse < min_mse:
         min_mse = mse
         best_degree = degree
+
+    if degree == 10 or degree == 20 or degree == 5:
+        plt.plot(X_train, y_train, label = "train")
+        plt.plot(X_train, y_pred, label = "predicted")
+        plt.legend()
+        plt.title('полином')
+        plt.savefig(str(degree) + ".png")
+        plt.clf()
+
 
 print(f"Оптимальная степень полинома: {best_degree}")
 
