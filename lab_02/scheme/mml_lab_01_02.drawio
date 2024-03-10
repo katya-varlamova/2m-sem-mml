@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" modified="2024-02-12T20:03:54.158Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Safari/605.1.15" etag="o2jSVN1ruBTQEZNl_WuR" version="23.1.3" type="google">
+  <diagram name="Страница — 1" id="cc54JLHmRa901a_aZqtY">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jC9ODkhy_mmySfzodgf6-28" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jC9ODkhy_mmySfzodgf6-21" target="jC9ODkhy_mmySfzodgf6-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="240" as="sourcePoint" />
+            <mxPoint x="610" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-27" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jC9ODkhy_mmySfzodgf6-25" target="jC9ODkhy_mmySfzodgf6-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="240" as="sourcePoint" />
+            <mxPoint x="530" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-4" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="10" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-6" value="Цикл degree от 1 до 50" style="shape=loopLimit;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-8" value="вычислить среднеквадратичную ошибку mse по y_train и y_predict&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="632.5" y="150" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-10" value="" style="shape=loopLimit;whiteSpace=wrap;html=1;rotation=-180;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="620.5" y="361" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-11" value="Цикл degree от 1&amp;nbsp;до 50" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="675.5" y="366" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-13" value="сгенерировать данные обучающей выборки x_train" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="130" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-14" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;вычислить значения данных обучающей выборки y_train&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="190" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-17" value="x_poly = аппроксимация x_train полиномом степени i&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="321" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-19" value="создание и обучение модели линейной регрессии model по x_poly и y_train" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="390" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-20" value="y_predict = model.predict(x_poly)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="632.5" y="90" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-21" value="конец" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="625" y="490" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jC9ODkhy_mmySfzodgf6-22" target="jC9ODkhy_mmySfzodgf6-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-22" value="mse &amp;lt; min_mse" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="230" width="265" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-23" value="min_mse = Infinity&lt;br&gt;best_degree = 0" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="70" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jC9ODkhy_mmySfzodgf6-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1023" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-24" value="min_mse = mse&lt;br&gt;best_degree = degree" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="892.5" y="282" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-25" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="400" y="470" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-26" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="722.5" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jC9ODkhy_mmySfzodgf6-31" value="вывести best_degree" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="613.87" y="430" width="283.25" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
