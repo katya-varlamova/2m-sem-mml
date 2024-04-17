@@ -32,8 +32,11 @@ interval = 0
 while value != -1:
     if value == 0:
         plt.clf()
-        x = gen_normal_data(a_1, sigma_1, n)
-        y = gen_normal_data(a_2, sigma_2, m)
+        p_value_equal_means = 0
+        while p_value_equal_means < 0.9:
+            x = gen_normal_data(a_1, sigma_1, n)
+            y = gen_normal_data(a_2, sigma_2, m)
+            _, p_value_equal_means = stats.ttest_ind(x, y, equal_var=True)
         plt.hist(x, alpha=0.5, label='выборка X')
         plt.hist(y, alpha=0.5, label='выборка Y')
         plt.legend()
