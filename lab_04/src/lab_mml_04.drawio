@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-03-21T15:40:22.974Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="BzdPnrEdeu2ZggYTC5gT" version="24.0.7" type="google">
+  <diagram name="Страница — 1" id="pbxnNYsJr7Ph7u4g-c0P">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-21" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="NlJpWXvPQym4qLeLgdpr-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="440" as="sourcePoint" />
+            <mxPoint x="430" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-1" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="NlJpWXvPQym4qLeLgdpr-4" target="NlJpWXvPQym4qLeLgdpr-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="240" as="sourcePoint" />
+            <mxPoint x="530" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-2" value="Начало" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-8" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-4" value="разделение данных на тестовую и обучающую выборки в отношении 20-80 X_test, X_train, Y_test, Y_train" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="130" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-6" value="обучить классификатор clf на&amp;nbsp; vec_train и Y_train" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="270" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-19" value="чтение датасета в переменную data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="297" y="60" width="266" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-22" value="применить алгоритм векторизации к X_train и X_test, получив vec_train и vec_test" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="199" width="266" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-24" value="посчитать f-мера и accuracy классификатора clf на vec_test и&amp;nbsp; y_test" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NlJpWXvPQym4qLeLgdpr-25" value="конец" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="260" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
